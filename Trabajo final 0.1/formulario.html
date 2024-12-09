@@ -1,0 +1,96 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ingrseo cliene</title>
+    <style>
+        body{
+            background-color: rgb(255, 216, 249);
+            text-align: center;
+        }
+        form{
+           background-color: rgb(255, 230, 249); 
+           border: 1px solid;
+           width: 50%;
+           
+        }
+        p{
+            font-style: normal;
+            color: rgb(0, 0, 0);
+        }
+        .registro {
+            margin: 20px auto;
+          padding: 20px;
+         max-width: 600px;
+         background-color: #fff; 
+         border: 1px solid #ddd; 
+         border-radius: 8px;
+         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        text-align: center; 
+        }
+       
+          .registro p {
+      color: #555; 
+     font-size: 16px;
+     margin: 10px 0;
+    }
+
+        .registro form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .registro label {
+            color: #444;
+            font-size: 16px;
+            margin-bottom: 5px;
+            text-align: left;
+            width: 100%;
+        }
+
+        .registro input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+                
+    </style>
+</head>
+<body>
+    <h1>Formulario de ingreso cliente</h1>
+    <form method="get">
+        <p>Tipo de documento:  <select name="txtid">
+            <option value="CC">Cedula de ciudadanía</option>
+            <option value="CE">Cedula de extranjería</option>
+            <option value="TI">Tarjeta de identidad</option>
+            <option value="PS">Pasaporte</option>
+     </select></p>
+     <p>Documento <input type="number" size="20" name= "document"required placeholder="ingrese su  documento"></p>
+     <p>Nombre: <input type="text" size="40" name="nombre" required placeholder="ingrese su nombre"></p>
+     <p>Fecha de nacimiento: <input type="date" name="Fecha" required></p>
+     <p>Sexo: <input type= "radio" name="mfo" value="h"required >Masculino 
+     <input type="radio" name="mfo" value="f" required>femenino
+      <input type="radio" name="mfo" value="otro" required>otro</p>
+      <p> Email: <input type="email" name="txtemail" placeholder="ingrese su correo " required></p>
+      <p>Teléfono: <input type="number" name="tel" placeholder="ingrese su teléfono" required></p>
+      <p>Forma de pago: <select name="Txtid">
+        <option value="N">Nequi</option>
+        <option value="b">Bancolombia</option>
+        <option value="P">Paypal</option>
+  </select></p>
+      <p></p>
+      
+     <p>
+        <input type="submit" value="enviar">
+        <input type="reset" value="cancelar">
+     </p>
+
+    </form>
+</body>
+</html>
